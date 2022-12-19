@@ -6,15 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Describe your site">
     <meta name="keywords" content="Keywords, for, search">
-    <link rel="icon" href="favicon.svg"> <!-- svg file for icon, Chrome, Firefox, Edge!-->
-    <link rel="mask-icon" href="favicon.svg"> <!-- svg file for icon, Safari-->
+    <link rel="shortcut icon" href="./assets/logo/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./scss/style.css">
-    <title>Site name</title>
+    <title>VET</title>
 </head>
 <body>
     <header>
-        <div class="container">
-
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__content">
+                    <address class="header-top__address">г. Мариуполь, проспект Победы, 48а</address>
+                    <ul class="header-top__phone-numbers">
+                        <li><a href="tel:+0676347574">(067) 634 - 75 - 74</a></li>
+                        <li><a href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
+                        <li><a href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
+                    </ul>
+                    <div class="header-top__work-time">
+                        <div class="header-top__work-time-1">
+                            <span class="days">Пн-Пт</span>
+                            <div class="time"><time datetime="08:00">8:00</time> - <time datetime="18:00">18:00</time></div>  
+                        </div>
+                        <div class="header-top__work-time-2">
+                            <span class="days">Сб-Вс</span>
+                            <div class="time"><time datetime="08:00">8:00</time> - <time datetime="14:00">14:00</time></div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__content">
+                    <a class="header-logo" href="index.html"><img src="./assets/logo/logo.svg" alt="VET logo"></a>
+                    <nav class="header-navbar">
+                        <ul class="header-navbar__list">
+                            <li class="header-navbar__item"><a class="header-navbar__link" href="index.html">Главная</a></li>
+                            <li class="header-navbar__item"><a class="header-navbar__link" href="#">О Клинике</a></li>
+                            <li class="header-navbar__item"><a class="header-navbar__link" href="#">Наши Услуги</a></li>
+                            <li class="header-navbar__item"><a class="header-navbar__link" href="#">Полезные Статьи</a></li>
+                            <li class="header-navbar__item"><a class="header-navbar__link" href="#">FAQ</a></li>
+                            <li class="header-navbar__item"><a class="header-navbar__link" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <label class="header-bottom__label" for="header-btn">
+                        <a id="header-btn" class="header-bottom__btn btn" href="#">Задать вопрос</a>
+                    </label>
+                </div>
+            </div>
         </div>
     </header>
     <main></main>
