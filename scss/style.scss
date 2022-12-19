@@ -1,2 +1,177 @@
 @import "nullstyle.scss";
 @import "fonts.scss";
+
+
+$main-black: #333333;
+$main-orange: #FFBD54;
+$main-gray: #949494;
+
+
+
+body{
+    background: url(../assets/images/allpage-bg.png);
+}
+
+
+.container{
+    max-width: 1340px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+address{
+    @include flex($cGap: 10);
+    @include font(14,500,18,none, $main-black);
+    font-style: normal;
+   
+}
+.phone-numbers{
+    @include flex(center, $cGap: 10);
+}
+.phone-number-item{
+    @include flex(center, $cGap: 10);
+   & > a{
+    @include font(14,500,18,none,$main-black);
+   }
+   }
+.work-time{
+    @include flex(center, $cGap: 15);
+    & .work-time-1, & .work-time-2{
+        @include flex($cGap: 5);
+        & .days{
+            @include font(14,700,18,none, $main-black);
+        }
+    }
+}
+
+.header-top{
+    background: url(../assets/images/bg.jpg) repeat-x;
+
+    &__content{
+        @include flex(center, $cGap: 105);
+        padding: 10px 0;
+        width: fit-content;
+        margin-left: auto;
+    }
+    &__address::before{
+        content: url(../assets/icons/header-home.svg);
+    }
+
+    & .phone-number-item:first-child::before{
+        content: url(../assets/icons/header-phone.svg);
+}
+
+    & .phone-number-item:nth-child(1n+2)::before{
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        background-color: $main-orange;
+        border-radius: 50%;
+    }
+
+    & .work-time::before{
+        content: "";
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url(../assets/icons/header-calendar.svg) no-repeat;
+    }
+}
+
+
+.header-bottom{
+    background-color: white;
+    border-top: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
+    &__content{
+        @include flex(center, space-between);
+
+        & .header-logo{
+            position: relative;
+            width: 178px;
+            height: 61px;
+            & img{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+
+        & .header-navbar__list{
+            @include flex(center, $cGap: 55);
+        }
+        & .header-navbar__link{
+            @include font(16,500,21,none, $main-black);
+        }
+    }
+    &__label{
+    }
+    &__btn{
+        @include font(16,500,21,none,$main-black);
+        @include flex(center, $cGap: 10);
+        &::before{
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: url(../assets/icons/paw.svg) no-repeat;
+        }
+    }
+
+}
+
+main{
+    .hero-page{
+        &__content{
+            padding-top: 217px;
+            padding-left: 115px;
+        }
+    &__titleblock{
+        @include flex($fDirection: column, $rGap: 27);
+        margin-bottom: 120px;
+    }
+    & .main-page__title{
+        @include font(70,700,64,none,$main-black);
+    }
+    & .main-page__subtitle{
+        @include font(16,400,20,none,$main-gray);
+        max-width: 445px;
+    }
+    & .hero-page__helperblock{
+        @include flex($cGap: 120);
+    }
+
+    & .hero-page__helper-item{
+        @include flex($fDirection: column);
+    }
+    & .hero-page__helper-imgbox{
+        width: 75px;
+        height: 75px;
+        margin-bottom: 25px;
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & .work-time{
+        @include flex($fDirection: column, $rGap: 10);
+        @include font(16,500,21,none,$main-black);
+        & .work-time-1, & .work-time-2{
+            align-items: center;
+        } 
+    }
+
+    & .phone-numbers{
+        @include flex($fDirection: column, $rGap: 5);
+    }
+    }
+}

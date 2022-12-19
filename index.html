@@ -16,17 +16,17 @@
             <div class="container">
                 <div class="header-top__content">
                     <address class="header-top__address">г. Мариуполь, проспект Победы, 48а</address>
-                    <ul class="header-top__phone-numbers">
-                        <li><a href="tel:+0676347574">(067) 634 - 75 - 74</a></li>
-                        <li><a href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
-                        <li><a href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
+                    <ul class="phone-numbers">
+                        <li class="phone-number-item"><a href="tel:+0676347574">(067) 634 - 75 - 74</a></li>
+                        <li class="phone-number-item"><a href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
+                        <li class="phone-number-item"><a href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
                     </ul>
-                    <div class="header-top__work-time">
-                        <div class="header-top__work-time-1">
+                    <div class="work-time">
+                        <div class="work-time-1">
                             <span class="days">Пн-Пт</span>
                             <div class="time"><time datetime="08:00">8:00</time> - <time datetime="18:00">18:00</time></div>  
                         </div>
-                        <div class="header-top__work-time-2">
+                        <div class="work-time-2">
                             <span class="days">Сб-Вс</span>
                             <div class="time"><time datetime="08:00">8:00</time> - <time datetime="14:00">14:00</time></div>  
                         </div>
@@ -55,10 +55,125 @@
             </div>
         </div>
     </header>
-    <main></main>
+
+
+    <main>
+        <section class="hero-page">
+            <div class="container">
+                <div class="hero-page__content">
+                    <div class="hero-page__leftside">
+                        <div class="hero-page__titleblock">
+                            <h1 class="main-page__title">Контакты</h1>
+                            <p class="main-page__subtitle">Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время.</p>
+                        </div>
+                        <ul class="hero-page__helperblock">
+                            <li class="hero-page__helper-item">
+                                <div class="hero-page__helper-imgbox">
+                                    <img src="./assets/icons/location.svg" alt="location img">
+                                </div>
+                                <address>г. Мариуполь,<br>проспект Победы, 48а</address>
+                            </li>
+                            <li class="hero-page__helper-item">
+                                <div class="hero-page__helper-imgbox">
+                                    <img src="./assets/icons/calendar.svg" alt="location img">
+                                </div>
+                                <div class="work-time">
+                                    <div class="work-time-1">
+                                        <span class="days">Пн-Пт</span>
+                                        <div class="time"><time datetime="08:00">8:00</time> - <time datetime="18:00">18:00</time></div>  
+                                    </div>
+                                    <div class="work-time-2">
+                                        <span class="days">Сб-Вс</span>
+                                        <div class="time"><time datetime="08:00">8:00</time> - <time datetime="14:00">14:00</time></div>  
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hero-page__helper-item">
+                                <div class="hero-page__helper-imgbox">
+                                    <img src="./assets/icons/phone.svg" alt="location img">
+                                </div>
+                                <ul class="phone-numbers">
+                                    <li class="phone-number-item"><a href="tel:+0676347574">(067) 634 - 75 - 74</a></li>
+                                    <li class="phone-number-item"><a href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
+                                    <li class="phone-number-item"><a href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-find">
+            <div class="container">
+                <div class="how-find__content-top">
+                    <img src="./assets/images/how-find-dog.png" alt="dog">
+                    <h2 class="how-find__title section-title">Как нас найти?</h2>
+                </div>
+            </div>
+            <div class="how-find__map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10366/mariupol/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Мариуполь</a><a href="https://yandex.uz/maps/10366/mariupol/house/prospekt_peremohy_48a/Z04YcANiTUEAQFptfX1xdnpjZw==/?ll=37.642447%2C47.107603&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Победы, 48А — Яндекс Карты</a><iframe src="https://yandex.uz/map-widget/v1/-/CCUnfLFVKB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                <img src="./assets/images/domik.jpg" alt="house">
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
-
+          <div class="footer-content">
+            <div class="footer-content__left">
+              <a href="#" class="logo">
+                <img src="./assets/logo/logo.svg" alt="img">
+              </a>
+              <div class="footer-links">
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a  href="#">О Клинике</a></li>
+                  <li><a  href="#">Наши Услуги</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Полезные Статьи</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-content__right">
+            <div class="days">
+                <div class="header-top__content__work-days1">
+                  <span class="day-names">Пн - Пт</span>
+                  <div class="time">
+                    <time datetime="08:00">8:00</time>
+                    <span>-</span>
+                    <time datetime="18:00">18:00</time>
+                  </div>
+                </div>
+                <div class="header-top__content__work-days2">
+                  <span class="day-names">Сб - Вс</span>
+                  <div class="time">
+                    <time datetime="08:00">8:00</time>
+                    <span>-</span>
+                    <time datetime="14:00">14:00</time>
+                  </div>
+                </div>
+            </div>
+              <address class="header-top__content__address">г. Мариуполь, проспект Победы, 48а
+  
+              </address>
+              <ul class="header-top__phone-links-list">
+                <li class="header-top__phone-links-list-item">
+                  <a class="header-top phone-link" href="tel:+0676347574">(067) 634 - 75 - 74</a>
+                </li>
+                <li class="header-top__phone-links-list-item">
+                  <a class="header-top phone-link" href="tel:+0637570131">(0637) 57 - 01 - 31</a>
+                </li>
+                <li class="header-top__phone-links-list-item">
+                  <a class="header-top phone-link" href="tel:+0982664389">(098) 266 - 43 - 89</a>
+                </li>
+            </ul>
+            </div>
+          </div>
+          <div class="copy">© 2020 example. All Rights Reserved.</div>
         </div>
     </footer>
     <script src="./js/index.js"></script>
