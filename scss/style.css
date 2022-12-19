@@ -331,6 +331,11 @@ address {
   background: url(../assets/icons/paw.svg) no-repeat;
 }
 
+main .hero-page {
+  background: url(../assets/images/main-page-dog.png) no-repeat;
+  background-position: calc(50% + 460px) calc(50% + 80px);
+  margin-bottom: 130px;
+}
 main .hero-page__content {
   padding-top: 217px;
   padding-left: 115px;
@@ -365,6 +370,9 @@ main .hero-page .hero-page__helperblock {
   flex-direction: row;
   -moz-column-gap: 120px;
        column-gap: 120px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 main .hero-page .hero-page__helper-item {
   display: flex;
@@ -402,4 +410,48 @@ main .hero-page .phone-numbers {
   justify-content: flex-start;
   flex-direction: column;
   row-gap: 5px;
+}
+main .how-find__content-top {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: row;
+  background: url(../assets/images/how_find.png) no-repeat;
+  background-position: calc(50% + 150px) calc(50% - 15px);
+  position: relative;
+  z-index: 5;
+}
+main .how-find__dogimg {
+  margin-top: 95px;
+}
+main .how-find__title-section {
+  flex-grow: 1;
+  display: flex;
+  padding-bottom: 100px;
+}
+main .how-find__title-section .how-find__title {
+  align-self: flex-end;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  text-transform: none;
+  color: #333333;
+}
+main .how-find__map {
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  top: -45px;
+}
+main .how-find__map div {
+  flex-basis: 70%;
+}
+main .how-find__map div iframe {
+  width: 100%;
+  height: 100%;
+}
+main .how-find__map img {
+  flex-grow: 1;
+  flex-shrink: 1;
 }/*# sourceMappingURL=style.css.map */

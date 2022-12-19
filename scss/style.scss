@@ -131,9 +131,13 @@ address{
 
 main{
     .hero-page{
+        background: url(../assets/images/main-page-dog.png) no-repeat;
+        background-position: calc(50% + 460px) calc(50% + 80px);
+        margin-bottom: 130px;
         &__content{
             padding-top: 217px;
             padding-left: 115px;
+           
         }
     &__titleblock{
         @include flex($fDirection: column, $rGap: 27);
@@ -148,6 +152,7 @@ main{
     }
     & .hero-page__helperblock{
         @include flex($cGap: 120);
+        width: fit-content;
     }
 
     & .hero-page__helper-item{
@@ -174,4 +179,46 @@ main{
         @include flex($fDirection: column, $rGap: 5);
     }
     }
+
+    .how-find{
+        &__content-top{
+            @include flex;
+            background: url(../assets/images/how_find.png) no-repeat;
+            background-position: calc(50% + 150px) calc(50% + -15px);
+            position: relative;
+            z-index: 5;
+
+        }
+    &__dogimg{
+        margin-top: 95px;
+    }
+    &__title-section{
+        flex-grow: 1;
+        display: flex;
+        padding-bottom: 100px;
+    & .how-find__title{
+        align-self: flex-end;
+        @include font(48,700,62,none,$main-black);
+    }
+    }
+    &__map{
+        max-width: 2000px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        top: -45px;
+        & div{
+            flex-basis: 70%;
+            & iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        & img{
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    }
+    }
+   
 }
